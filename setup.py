@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 def read(fname):
@@ -14,7 +14,7 @@ setup(
     license="BSD",
     keywords="socketjs pubsub",
     url = "https://github.com/jonashagstedt/swampdragon",
-    packages=['swampdragon', ],
+    packages=find_packages(),
     long_description=read('README.md'),
     install_requires=[
         "Django >= 1.4",
